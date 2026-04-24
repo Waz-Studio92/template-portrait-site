@@ -277,6 +277,7 @@
     text-align: center;
 }
 
+#profile,details,
 #pick-up,#songs,
 #news,#link {
     opacity: 0;
@@ -284,6 +285,8 @@
     transition: opacity 1.2s ease, transform 1.2s ease;
 }
 
+#profile.is-active,
+#details.is-active,
 #pick-up.is-active,
 #songs.is-active,
 #news.is-active,
@@ -292,16 +295,24 @@
     transform: translateY(0);
 }
 
-#songs.is-active {
-    transition-delay: .2s;
+#details.is-active {
+    transition-delay: .25s;
 }
 
-#news.is-active {
+#pick-up.is-active {
     transition-delay: .35s;
 }
 
-#link.is-active {
+#songs.is-active {
     transition-delay: .45s;
+}
+
+#news.is-active {
+    transition-delay: .55s;
+}
+
+#link.is-active {
+    transition-delay: .6s;
 }
 
 /* ===================
