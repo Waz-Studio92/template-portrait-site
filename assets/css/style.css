@@ -88,6 +88,7 @@
     font-size: 2rem;
     text-align: center;
     margin: 1.5rem auto;
+    width: fit-content;
 }
 
 .profile-block {
@@ -276,14 +277,36 @@
     text-align: center;
 }
 
+#pick-up,#songs,
+#news,#link {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1.2s ease, transform 1.2s ease;
+}
+
+#pick-up.is-active,
+#songs.is-active,
+#news.is-active,
+#link.is-active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 /* ===================
 
     NEWS
 
 ==================== */
 
+.mv,
 .section {
     text-align: left;
+}
+
+.mv p,
+.section p {
+    margin: 0 auto;
+    width: fit-content;
 }
 
 .news-block {
@@ -296,7 +319,8 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-top: 1rem;
+    margin: 1rem auto 0;
+    width: fit-content;
 }
 
 .time-txt {
