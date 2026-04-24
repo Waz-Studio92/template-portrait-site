@@ -292,6 +292,18 @@
     transform: translateY(0);
 }
 
+#songs.is-active {
+    transition-delay: .2s;
+}
+
+#news.is-active {
+    transition-delay: .35s;
+}
+
+#link.is-active {
+    transition-delay: .45s;
+}
+
 /* ===================
 
     NEWS
